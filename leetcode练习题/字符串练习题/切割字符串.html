@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+    /*
+      要求  给定一个字符串，词组以空格分隔，将其中的每个词组分别逆序排列；
+
+      Example
+        Input: "Let's take LeetCode contest"
+        Output: "s'teL ekat edoCteeL tsetnoc"
+    */
+
+    (function(s) {
+       var arr = s.trim().split(" ");
+       var arr2 = [];
+       for (let i = 0; i < arr.length; i++) {
+         let w = arr[i].split("").reverse().join("");
+         arr2.push(w);
+       }
+       console.log(arr2.join(" "))
+       return arr2.join(" ");
+    })("Let's take LeetCode contest")
+    </script>
+  </body>
+</html>
